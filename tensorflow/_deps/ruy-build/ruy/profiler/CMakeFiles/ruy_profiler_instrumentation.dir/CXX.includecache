@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/coral/tensorflow/tensorflow/ruy/ruy/profiler/instrumentation.cc
+ruy/profiler/instrumentation.h
+/home/coral/tensorflow/tensorflow/ruy/ruy/profiler/ruy/profiler/instrumentation.h
+cstring
+-
+
+ruy/ruy/profiler/instrumentation.h
+cstdio
+-
+mutex
+-
+vector
+-
+

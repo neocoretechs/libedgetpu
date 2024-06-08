@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/coral/tensorflow/tensorflow/xnnpack/src/microkernel-utils.c
+assert.h
+-
+xnnpack/math.h
+-
+xnnpack/microkernel-utils.h
+-
+
+xnnpack/src/xnnpack/common.h
+TargetConditionals.h
+-
+
+xnnpack/src/xnnpack/math.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+assert.h
+-
+intrin.h
+-
+stdlib.h
+-
+xnnpack/common.h
+-
+
+xnnpack/src/xnnpack/microkernel-utils.h
+stddef.h
+-
+xnnpack/common.h
+-
+

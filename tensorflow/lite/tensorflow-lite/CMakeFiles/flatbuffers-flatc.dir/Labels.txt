@@ -1,0 +1,13 @@
+# Target labels
+ flatbuffers-flatc
+# Source files and their labels
+/home/coral/tensorflow/tensorflow/lite/tensorflow-lite/CMakeFiles/flatbuffers-flatc
+/home/coral/tensorflow/tensorflow/lite/tensorflow-lite/CMakeFiles/flatbuffers-flatc.rule
+/home/coral/tensorflow/tensorflow/lite/tensorflow-lite/CMakeFiles/flatbuffers-flatc-complete.rule
+/home/coral/tensorflow/tensorflow/lite/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-install.rule
+/home/coral/tensorflow/tensorflow/lite/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-mkdir.rule
+/home/coral/tensorflow/tensorflow/lite/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-download.rule
+/home/coral/tensorflow/tensorflow/lite/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-update.rule
+/home/coral/tensorflow/tensorflow/lite/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-patch.rule
+/home/coral/tensorflow/tensorflow/lite/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-configure.rule
+/home/coral/tensorflow/tensorflow/lite/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-build.rule

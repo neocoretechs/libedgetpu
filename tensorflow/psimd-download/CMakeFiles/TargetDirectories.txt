@@ -1,0 +1,3 @@
+/home/coral/tensorflow/tensorflow/psimd-download/CMakeFiles/rebuild_cache.dir
+/home/coral/tensorflow/tensorflow/psimd-download/CMakeFiles/edit_cache.dir
+/home/coral/tensorflow/tensorflow/psimd-download/CMakeFiles/psimd.dir

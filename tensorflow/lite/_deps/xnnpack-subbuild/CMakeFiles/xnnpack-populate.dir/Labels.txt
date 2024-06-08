@@ -1,0 +1,14 @@
+# Target labels
+ xnnpack-populate
+# Source files and their labels
+/home/coral/tensorflow/tensorflow/lite/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate
+/home/coral/tensorflow/tensorflow/lite/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate.rule
+/home/coral/tensorflow/tensorflow/lite/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate-complete.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-install.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-mkdir.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-download.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-update.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-patch.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-configure.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-build.rule
+/home/coral/tensorflow/tensorflow/lite/src/xnnpack-populate-stamp/xnnpack-populate-test.rule

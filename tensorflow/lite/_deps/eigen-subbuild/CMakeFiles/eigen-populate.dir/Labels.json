@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/_deps/eigen-subbuild/CMakeFiles/eigen-populate"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/_deps/eigen-subbuild/CMakeFiles/eigen-populate.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/_deps/eigen-subbuild/CMakeFiles/eigen-populate-complete.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-install.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-download.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-update.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-patch.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-configure.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-build.rule"
+		},
+		{
+			"file" : "/home/coral/tensorflow/tensorflow/lite/src/eigen-populate-stamp/eigen-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"eigen-populate"
+		],
+		"name" : "eigen-populate"
+	}
+}

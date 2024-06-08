@@ -1,0 +1,48 @@
+To create a JNI C program to use Edge TPU for object segmentation, you'll need to follow these steps:1. Create a Java wrapperWrite a Java class that will call the native C code using JNI. This class will provide the RGB byte array image and receive the segmentation results.2. Write the C codeCreate a C file (e.g., edge_tpu_segmentation.c) that will load the TensorFlow Lite model using the Edge TPU library ((link unavailable)) and perform object segmentation on the input RGB byte array image.3. Use the TensorFlow Lite C APIIn your C code, include the TensorFlow Lite C API header (tensorflow-lite/c/c_api.h) and use the TfLiteModel and TfLiteInterpreter APIs to load the model and run inference.4. Integrate with Edge TPUUse the Edge TPU C API (header file: edgetpu.h) to create an Edge TPU context and delegate the TensorFlow Lite interpreter to run on the Edge TPU.5. Call the C code from Java using JNIUse the javah tool to generate the JNI header file for your Java wrapper class, and then implement the native method in your C code to call the Edge TPU segmentation function.Here's a rough outline of the C code:
+
+#include <tensorflow-lite/c/c_api.h>
+#include
+// Load the model and create an interpreter
+TfLiteModel* model = TfLiteModelCreateFromFile("model.tflite");
+TfLiteInterpreter* interpreter = TfLiteInterpreterCreate(model);
+// Create an Edge TPU context and delegate the interpreter
+EdgetpuContext* context = EdgetpuContextCreate();
+EdgetpuDelegate* delegate = EdgetpuDelegateCreate(context);
+TfLiteInterpreterSetDelegate(interpreter, delegate);
+// Run object segmentation on the input RGB byte array image
+void* input_data = ...; // input RGB byte array
+TfLiteTensor* input_tensor = TfLiteTensorCreate(input_data, ...);
+TfLiteInterpreterSetInputTensor(interpreter, input_tensor, 0);
+TfLiteInterpreterInvoke(interpreter);
+TfLiteTensor* output_tensor = TfLiteInterpreterGetOutputTensor(interpreter, 0);
+void* output_data = TfLiteTensorData(output_tensor); // segmentation results
+// Clean up
+TfLiteInterpreterDelete(interpreter);
+TfLiteModelDelete(model);
+EdgetpuDelegateDelete(delegate);
+EdgetpuContextDelete(context);
+
+CC=gcc
+CFLAGS=-fPIC -I/usr/include/tensorflow-lite -I/usr/include/edgetpu
+LDFLAGS=-shared -L/usr/lib -ltensorflow-lite -ledgetpu
+SRCS=edge_tpu_segmentation.c
+OBJS=$(SRCS:.c=.o)
+SO_FILE=libedge_tpu_segmentation.so
+all: $(SO_FILE)
+$(SO_FILE): $(OBJS)
+$(CC) $(LDFLAGS) -o $@ $^
+.c.o:
+$(CC) $(CFLAGS) -c $<
+clean:
+rm -f $(OBJS) $(SO_FILE)
+
+* CC=gcc sets the C compiler to GCC.
+* CFLAGS sets the compiler flags to include the necessary headers for TensorFlow Lite and Edge TPU.
+* LDFLAGS sets the linker flags to create a shared object and link against the TensorFlow Lite and Edge TPU libraries.
+* SRCS lists the source file(s) to compile.
+* OBJS generates the object file names from the source files.
+* SO_FILE sets the name of the shared object file.
+* The first rule (all: $(SO_FILE)) builds the shared object file.
+* The second rule ($(SO_FILE): $(OBJS)) links the object files to create the shared object file.
+* The third rule (.c.o) compiles a single source file to an object file.
+* The clean rule removes the object files and shared object file.

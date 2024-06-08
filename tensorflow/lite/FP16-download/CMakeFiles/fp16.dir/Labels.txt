@@ -1,0 +1,14 @@
+# Target labels
+ fp16
+# Source files and their labels
+/home/coral/tensorflow/tensorflow/lite/FP16-download/CMakeFiles/fp16
+/home/coral/tensorflow/tensorflow/lite/FP16-download/CMakeFiles/fp16.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/CMakeFiles/fp16-complete.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-install.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-mkdir.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-download.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-update.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-patch.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-configure.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-build.rule
+/home/coral/tensorflow/tensorflow/lite/FP16-download/fp16-prefix/src/fp16-stamp/fp16-test.rule

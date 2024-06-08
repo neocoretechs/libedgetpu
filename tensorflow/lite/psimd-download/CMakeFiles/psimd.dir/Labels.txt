@@ -1,0 +1,14 @@
+# Target labels
+ psimd
+# Source files and their labels
+/home/coral/tensorflow/tensorflow/lite/psimd-download/CMakeFiles/psimd
+/home/coral/tensorflow/tensorflow/lite/psimd-download/CMakeFiles/psimd.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/CMakeFiles/psimd-complete.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-install.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-mkdir.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-download.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-update.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-patch.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-configure.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-build.rule
+/home/coral/tensorflow/tensorflow/lite/psimd-download/psimd-prefix/src/psimd-stamp/psimd-test.rule
